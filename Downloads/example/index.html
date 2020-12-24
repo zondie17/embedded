@@ -1,0 +1,13 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <img id="cam" width="200" height="150" />
+        <img src="./cam.mjpg" />
+        
+        <script>
+            document.getElementById("cam").src = "http://" + window.location.hostname + ":8080/?action=stream";
+        </script>
+    </body>
+</html>
